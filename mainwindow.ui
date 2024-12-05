@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>481</width>
+      <height>227</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="cassetteGrid" rowminimumheight="0,0" columnminimumwidth="0,0">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="tapeLengthLabel">
+         <property name="text">
+          <string>Tape Length</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="tapeTypeLabel">
+         <property name="text">
+          <string>Tape Type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QComboBox" name="tapeTypeSelect">
+         <item>
+          <property name="text">
+           <string>Type I</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type II</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type III</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type IV</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="tapeLengthSelect">
+         <item>
+          <property name="text">
+           <string>90 Min</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>60 Min</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>45 Min</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="cassetteContentWidget">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="sideATab">
+        <attribute name="title">
+         <string>Side A</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="sideBTab">
+        <attribute name="title">
+         <string>Side B</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
